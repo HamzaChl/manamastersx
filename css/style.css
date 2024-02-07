@@ -7,7 +7,6 @@
 
 body {
   background-color: var(--body-bg);
-  width: 100vw;
   height: 100vh;
   font-family: "Cabin", sans-serif;
 }
@@ -95,7 +94,7 @@ main {
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
-  background-image: url(../assets/Alexey\ Kruglov.jpg);
+  background-image: url("../assets/images/alexeykruglov.jpg");
   background-size: cover;
   padding-top: 400px;
 }
@@ -115,6 +114,20 @@ h2 {
   margin-left: 30px;
   margin-top: 30px;
 }
+
+/*
+Footer
+*/
+footer{
+  background-color: var(--nav-bg);
+  height: 10rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 
 /*
 Form
