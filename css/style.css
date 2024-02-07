@@ -133,7 +133,6 @@ h5 {
 /*
 Footer
 */
-footer {
 
 footer, footer section, .socialsFooter{
   display: flex;
@@ -147,10 +146,9 @@ footer{
   height: 30%;
   margin-top: 5rem;
   color: white;
-}
-
   gap: 4rem;
 }
+
 footer section{
   flex-direction: row;
   gap: 1rem;
@@ -159,7 +157,6 @@ footer section{
 }
 
 footer p{
-  margin-bottom: 1rem;
   text-align: center;
 }
 /*
