@@ -210,6 +210,12 @@ article {
   justify-content: center;
 }
 
+.project-holder img{
+  width: 300px;
+  height: 200px;
+  border-radius: 2%;
+}
+
 .card-holder, .project-holder{
   background-color: #f6f7f2;
   width: fit-content;
@@ -244,7 +250,3 @@ article img:hover {
   }
 }
 
-.project-holder img{
-  width: 300px;
-  height: 200px;
-}
