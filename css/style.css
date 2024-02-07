@@ -3,6 +3,7 @@
 :root {
   --nav-bg: #3a485f;
   --body-bg: #71819c;
+  --body-bg2: #58667e;
 }
 
 body {
@@ -27,7 +28,8 @@ nav {
 }
 
 ul img {
-  height: 70px;
+  height: auto;
+  max-width: 240px;
 }
 
 ul {
@@ -70,7 +72,7 @@ button {
 button:hover {
   background-color: rgb(230, 54, 44);
   box-shadow: 0 0 20px #ff6f6f50;
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 button:active {
@@ -94,7 +96,12 @@ main {
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
-  background-image: url("../assets/images/alexeykruglov.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.589)
+    ),
+    url("../assets/images/alexeykruglov.jpg");
   background-size: cover;
   padding-top: 400px;
 }
@@ -115,9 +122,18 @@ h2 {
   margin-top: 30px;
 }
 
+h5 {
+  color: white;
+  margin-left: 30px;
+  font-weight: lighter;
+  margin-top: 30px;
+  opacity: 0.5;
+}
+
 /*
 Footer
 */
+footer {
 
 footer, footer section, .socialsFooter{
   display: flex;
@@ -131,6 +147,8 @@ footer{
   height: 30%;
   margin-top: 5rem;
   color: white;
+}
+
   gap: 4rem;
 }
 footer section{
@@ -154,6 +172,10 @@ Form
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: var(--body-bg2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
 }
 
 .form h1 {
@@ -185,14 +207,10 @@ article {
 
 .card-layout {
   margin-top: 50px;
-  background-color: var(--nav-bg);
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
 }
 
 .card-holder, .project-holder{
@@ -200,6 +218,33 @@ article {
   width: fit-content;
   padding: 10px;
   border-radius: 10px;
+}
+
+article img:hover {
+  scale: 1.01;
+}
+
+@media screen and (max-width: 888px) {
+  li a {
+    display: none;
+  }
+  ul {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  nav {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+  .search {
+    width: 80vw;
+    margin-top: 10px;
+  }
 }
 
 .project-holder img{
