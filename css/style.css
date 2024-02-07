@@ -1,1 +1,175 @@
-@import url("https://use.typekit.net/mie6jsp.css");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Cabin:wght@400;500;600&display=swap");
+
+:root {
+  --nav-bg: #3a485f;
+  --body-bg: #71819c;
+}
+
+body {
+  background-color: var(--body-bg);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Cabin", sans-serif;
+}
+
+/*
+Navigation
+*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: var(--nav-bg);
+  padding-right: 50px;
+  padding-left: 50px;
+  box-shadow: 0px 10px 23px 0px rgba(58, 72, 95, 1);
+}
+
+ul img {
+  height: 70px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  font-weight: 400;
+  color: white;
+}
+li {
+  background-color: transparent;
+}
+
+li > a:hover {
+  transition: all 0.25s;
+  text-decoration: underline;
+}
+
+li > .active {
+  color: #fe8b01;
+  text-decoration: underline;
+}
+
+/*
+Button style
+*/
+
+button {
+  font-family: "Cabin", sans-serif;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fe8b01;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: rgb(230, 54, 44);
+  box-shadow: 0 0 20px #ff6f6f50;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #ce4b37;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/*
+Main Section
+*/
+
+main {
+  padding: 50px;
+}
+
+.banner {
+  height: 609px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
+  background-image: url(../assets/Alexey\ Kruglov.jpg);
+  background-size: cover;
+  padding-top: 400px;
+}
+
+h2 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#fdba66, #fd6d71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+
+.banner-text {
+  font-size: 20px;
+  color: white;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/*
+Form
+*/
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h1 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  background-color: white;
+  height: 40px;
+  width: 80vw;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+::placeholder {
+  color: rgb(149, 149, 149);
+}
+
+/*
+Article
+*/
+
+article {
+  text-align: center;
+}
+
+.card-layout {
+  margin-top: 50px;
+  background-color: var(--nav-bg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
+}
+
+.card-holder {
+  background-color: #f6f7f2;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
