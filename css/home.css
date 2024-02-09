@@ -30,6 +30,7 @@ Form
 
 .form {
   margin-top: 40px;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -50,9 +51,17 @@ Form
 input[type="text"] {
   background-color: white;
   height: 40px;
-  width: 80vw;
+  width: 45vw;
   margin-right: 10px;
   padding: 10px;
+}
+.form-search {
+  background-color: var(--nav-bg);
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
 }
 
 ::placeholder {
@@ -86,6 +95,10 @@ article {
   width: fit-content;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
+}
+.card-holder:hover {
+  scale: 1.06;
 }
 
 article img:hover {
