@@ -101,7 +101,7 @@ main {
       transparent,
       rgba(0, 0, 0, 0.589)
     ),
-    url("../assets/images/alexeykruglov.jpg");
+    url("../assets/images/back.jpg");
   background-size: cover;
   padding-top: 400px;
 }
@@ -211,7 +211,7 @@ Project container
       transparent,
       rgba(0, 0, 0, 0.762)
     ),
-    url("../assets/images/alexeykruglov.jpg");
+    url("../assets/images/back.jpg");
   /* filter: blur(4px); */
 }
 
@@ -234,6 +234,7 @@ Project container
 
 .project-holder:hover {
   scale: 1.1;
+  outline: 5px solid white;
   transition: ease-in 4ms;
 }
 
@@ -427,4 +428,11 @@ article img:hover {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+}
+
+/*
+Decks pagina
+*/
+
+.decks {
 }

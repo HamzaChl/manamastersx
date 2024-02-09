@@ -1,0 +1,22 @@
+@media screen and (max-width: 888px) {
+  li a {
+    display: none;
+  }
+  ul {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  nav {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+  .search {
+    width: 80vw;
+    margin-top: 10px;
+  }
+}

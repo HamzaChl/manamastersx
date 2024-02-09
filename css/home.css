@@ -1,0 +1,93 @@
+/*
+Main Section
+*/
+
+.banner {
+  height: 609px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.589)
+    ),
+    url("../assets/images/back.jpg");
+  background-size: cover;
+  padding-top: 400px;
+}
+
+.banner-text {
+  font-size: 20px;
+  color: white;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/*
+Form
+*/
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--body-bg2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
+}
+
+.form h1 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  background-color: white;
+  height: 40px;
+  width: 80vw;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+::placeholder {
+  color: rgb(149, 149, 149);
+}
+
+/*
+Article
+*/
+
+article {
+  text-align: center;
+}
+
+.card-layout {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-holder img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-holder {
+  background-color: #f6f7f2;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+article img:hover {
+  scale: 1.01;
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Cabin:wght@400;500;600&display=swap");
+
+:root {
+  --nav-bg: #3a485f;
+  --body-bg: #71819c;
+  --body-bg2: #58667e;
+}
+
+body {
+  background-color: var(--body-bg);
+  height: 100vh;
+  font-family: "Cabin", sans-serif;
+}
+
+/*
+Navigation
+*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: var(--nav-bg);
+  padding-right: 50px;
+  padding-left: 50px;
+  box-shadow: 0px 10px 23px 0px rgba(58, 72, 95, 1);
+}
+
+ul img {
+  height: auto;
+  max-width: 240px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  font-weight: 400;
+  color: white;
+}
+li {
+  background-color: transparent;
+}
+
+li > a:hover {
+  transition: all 0.25s;
+  text-decoration: underline;
+}
+
+li > .active {
+  color: #fe8b01;
+  text-decoration: underline;
+}
+
+/*
+Button style
+*/
+
+button {
+  font-family: "Cabin", sans-serif;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fe8b01;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: rgb(230, 54, 44);
+  box-shadow: 0 0 20px #ff6f6f50;
+  transform: scale(1.01);
+}
+
+button:active {
+  background-color: #ce4b37;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/*
+Main
+*/
+
+main {
+  padding: 45px;
+}
+
+/*
+Footer
+*/
+
+footer,
+footer section,
+.socialsFooter {
+  display: flex;
+}
+footer,
+.socialsFooter {
+  flex-direction: column;
+}
+
+footer {
+  background-color: var(--nav-bg);
+  height: 30%;
+  margin-top: 5rem;
+  color: white;
+  gap: 4rem;
+}
+
+footer section {
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*
+H1-H5
+*/
+
+h5 {
+  color: white;
+  margin-left: 30px;
+  font-weight: lighter;
+  margin-top: 30px;
+  opacity: 0.5;
+}
+
+h2 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#fdba66, #fd6d71);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  margin-left: 30px;
+}
