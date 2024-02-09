@@ -198,22 +198,36 @@ input[type="text"] {
 }
 
 /*
-Project container
+Project container for loading page
 */
+
+#loading-page-nav{
+  background-color: black;
+}
+
+#loading-page {
+  background-color:white;
+  
+}
+
+#loading-page-footer{
+  background-color: black;
+}
 
 .project-banner {
   text-align: center;
-  background-color: #3a485f;
-  border-radius: 20px;
-  padding: 30px;
+  padding: 200px;
   background-image: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(0, 0, 0, 0.762)
-    ),
-    url("../assets/images/back.jpg");
-  /* filter: blur(4px); */
+          to bottom,
+          transparent,
+          rgba(0, 0, 0, 0.3) /* Verminder de opaciteit van de achtergrondafbeelding */
+      ),
+      url("../assets/images/background-loading.jpg");
+  background-size: cover; /* Om de afbeelding 100% van de container te laten bedekken */
+  background-position: center; /* Om de afbeelding in het midden van de container te plaatsen */
 }
+
+
 
 .project-container {
   display: flex;

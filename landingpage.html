@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic The Gathering</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/accesdenied.js" defer></script>
   </head>
-  <body>
+  <body id="loading-page">
     <div id="popup" class="popup">
       <section class="alert">
-        <h2>You cannot click on this project !</h2>
+        <h3>You cannot click on this project !</h3>
         <button id="close">close</button>
       </section>
     </div>
-    <header>
-      <nav>
+   <header >
+      <nav id="loading-page-nav">
         <ul>
           <li><h1>ManaMasters</h1></li>
           <li>
@@ -27,12 +26,12 @@
           </li>
         </ul>
       </nav>
+      <section class="project-banner" >
+        <h2>Project Selector</h2>
+        <h5>Proudly Made by Imran Charaf Hamza</h5>
+      </section> 
     </header>
     <main>
-      <section class="project-banner">
-        <h2>Project Selector</h2>
-        <h5>Proudly Made by Imran Charafe Hamza</h5>
-      </section>
       <section class="project-container">
         <article class="project-holder">
           <div class="fortnite project">
@@ -71,14 +70,12 @@
             <p>Jujutsu Kaisen project</p>
           </div>
         </article>
-        <a href="./index.html">
-          <article class="project-holder accepted">
-            <div class="mtg project">
-              <h4>Magic The Gathering</h4>
-              <p>Magic The Gathering project</p>
-            </div>
-          </article>
-        </a>
+        <article class="project-holder accepted">
+          <div class="mtg project">
+            <h4>Magic The Gathering</h4>
+            <p>Magic The Gathering project</p>
+          </div>
+        </article>
         <article class="project-holder">
           <div class="pokemon project">
             <h4>Pokemon</h4>
@@ -87,7 +84,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer id="loading-page-footer">
       <section>
         <!--Dit is de opbouw zodat de footer al goed verdeeld is later kan de inhoud gewijzigd worden naar bv logo-->
         <section class="socialsFooter">
