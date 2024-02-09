@@ -26,6 +26,7 @@ Project container
 }
 
 .project-holder {
+  cursor: pointer;
   background-color: var(--body-bg2);
   width: fit-content;
   padding: 10px;
