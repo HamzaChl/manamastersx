@@ -11,7 +11,7 @@ Main Section
   box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.41);
   background-image: linear-gradient(
       to bottom,
-      transparent,
+      rgba(255, 255, 255, 0.221),
       rgba(0, 0, 0, 0.589)
     ),
     url("../assets/images/back.jpg");
@@ -117,7 +117,8 @@ article {
   cursor: pointer;
 }
 .card-holder:hover {
-  scale: 1.06;
+  transition: all 300ms ease-in;
+  transform: scale(1.02);
   z-index: 1;
 }
 

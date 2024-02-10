@@ -25,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: 100;
 }
 header:hover {
   transition: all 300ms ease-in;
@@ -71,6 +71,22 @@ ul img {
 }
 .profile-picture:hover {
   border: 2px solid white;
+}
+
+.menu-png {
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+}
+
+.mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mobile > .ham-menu > li {
+  width: 50px;
+  height: 50px;
 }
 
 ul {

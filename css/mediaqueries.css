@@ -1,3 +1,39 @@
+@media screen and (min-width: 888px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  li a {
+    display: none;
+  }
+  ul {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  nav {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  .divers {
+    display: none;
+  }
+
+  .card-layout {
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.589)
+    );
+  }
+}
 @media screen and (max-width: 888px) {
   li a {
     display: none;
