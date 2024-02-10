@@ -68,6 +68,8 @@ ul img {
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  background-image: url(../assets/images/profile.jpg);
+  background-size: contain;
 }
 .profile-picture:hover {
   border: 2px solid white;
