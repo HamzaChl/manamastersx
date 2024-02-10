@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Cabin:wght@400;500;600&display=swap");
 
 :root {
-  --nav-bg: #3a485f;
-  --body-bg: #71819c;
+  --nav-bg: #2e3849;
+  --body-bg: #3a485f;
   --body-bg2: #58667e;
+  --orange: #ef4323;
 }
 
 body {
@@ -16,26 +17,62 @@ body {
 Navigation
 */
 
-nav {
+header {
+  margin: 10px;
+  width: 100vw;
+  position: fixed;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10000;
+}
+
+nav {
+  width: 90vw;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-evenly;
   height: 100px;
   background-color: var(--nav-bg);
   padding-right: 50px;
   padding-left: 50px;
-  box-shadow: 0px 10px 23px 0px rgba(58, 72, 95, 1);
+  box-shadow: 0px 10px 23px 0px #05050551;
 }
 
 ul img {
   height: auto;
-  max-width: 240px;
+  max-width: 200px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: end;
+}
+.right li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-picture {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.profile-picture:hover {
+  border: 2px solid white;
 }
 
 ul {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 40px;
   font-weight: 400;
   color: white;
 }
@@ -46,10 +83,13 @@ li {
 li > a:hover {
   transition: all 0.25s;
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 li > .active {
-  color: #fe8b01;
+  color: var(--orange);
+  inline-size: 10px;
+  text-underline-offset: 5px;
   text-decoration: underline;
 }
 
@@ -62,15 +102,16 @@ button {
   padding: 12.5px 30px;
   border: 0;
   border-radius: 10px;
-  background-color: #fe8b01;
+  background-color: var(--orange);
   color: #ffffff;
   font-weight: Bold;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: rgb(230, 54, 44);
+  background-color: rgb(255, 13, 0);
   box-shadow: 0 0 20px #ff6f6f50;
   transform: scale(1.01);
 }
@@ -138,7 +179,7 @@ h5 {
 
 h2 {
   font-size: 72px;
-  background: -webkit-linear-gradient(#fdba66, #fd6d71);
+  background: -webkit-linear-gradient(#ff8a00, #ef4323);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
