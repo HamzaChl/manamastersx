@@ -110,7 +110,7 @@ article {
 }
 
 .card-holder {
-  background-color: #d9d9d9;
+  background-color: black;
   width: fit-content;
   padding: 10px;
   border-radius: 10px;
@@ -120,6 +120,9 @@ article {
   transition: all 300ms ease-in;
   transform: scale(1.02);
   z-index: 1;
+}
+.card-img {
+  border-radius: 15px;
 }
 
 article img:hover {
